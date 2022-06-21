@@ -12,9 +12,15 @@ void test(word alu_a_i, word alu_b_i);
 int main(int argc, char **argv) {
     //Initialize Verilators variables
 	Verilated::commandArgs(argc, argv);
+    std::cout << "Stress Testing:\n";
 	for(int i = 0; i < atoi(argv[1]); i++){
         test(rand(), rand());
 	}
+    std::cout << "Boundary Testing:\n";
+    test(4294967295, 4294967295);
+    test(0, 0);
+    test (4294967295, 0);
+    test (4294967294, 4294967295);
 	exit(EXIT_SUCCESS);
 }
 void test(word alu_a_i, word alu_b_i){
