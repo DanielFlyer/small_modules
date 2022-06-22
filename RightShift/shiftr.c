@@ -1,3 +1,5 @@
+/* Right Shift C Implementation */
+
 #include <stdio.h>
 #include <stddef.h>
 
