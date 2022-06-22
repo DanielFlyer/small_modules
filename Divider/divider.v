@@ -1,12 +1,51 @@
-module divider(
+module divider
+(
     // Inputs
-     input  [  3:0]  alu_op_i
-    ,input  [ 31:0]  alu_a_i
-    ,input  [ 31:0]  alu_b_i
+     input           clk_i
+    ,input           rst_i
+    ,input           opcode_valid_i
+    ,input  [ 31:0]  opcode_opcode_i
+    ,input  [ 31:0]  opcode_pc_i
+    ,input           opcode_invalid_i
+    ,input  [  4:0]  opcode_rd_idx_i
+    ,input  [  4:0]  opcode_ra_idx_i
+    ,input  [  4:0]  opcode_rb_idx_i
+    ,input  [ 31:0]  opcode_ra_operand_i
+    ,input  [ 31:0]  opcode_rb_operand_i
 
     // Outputs
-    ,output [31:0] div_result_r;
-)
+    ,output          writeback_valid_o
+    ,output [ 31:0]  writeback_value_o
+);
+
+
+
+//-----------------------------------------------------------------
+// Includes
+//-----------------------------------------------------------------
+`include "riscv_defs.v"
+
+//-------------------------------------------------------------
+// Registers / Wires
+//-------------------------------------------------------------
+reg          valid_q;
+reg  [31:0]  wb_result_q;
+
+//-------------------------------------------------------------
+// Divider
+//-------------------------------------------------------------
+wire inst_div_w         = (opcode_opcode_i & `INST_DIV_MASK) == `INST_DIV;
+wire inst_divu_w        = (opcode_opcode_i & `INST_DIVU_MASK) == `INST_DIVU;
+wire inst_rem_w         = (opcode_opcode_i & `INST_REM_MASK) == `INST_REM;
+wire inst_remu_w        = (opcode_opcode_i & `INST_REMU_MASK) == `INST_REMU;
+
+wire div_rem_inst_w     = ((opcode_opcode_i & `INST_DIV_MASK) == `INST_DIV)  || 
+                          ((opcode_opcode_i & `INST_DIVU_MASK) == `INST_DIVU) ||
+                          ((opcode_opcode_i & `INST_REM_MASK) == `INST_REM)  ||
+                          ((opcode_opcode_i & `INST_REMU_MASK) == `INST_REMU);
+
+wire signed_operation_w = ((opcode_opcode_i & `INST_DIV_MASK) == `INST_DIV) || ((opcode_opcode_i & `INST_REM_MASK) == `INST_REM);
+wire div_operation_w    = ((opcode_opcode_i & `INST_DIV_MASK) == `INST_DIV) || ((opcode_opcode_i & `INST_DIVU_MASK) == `INST_DIVU);
 
 reg [31:0] dividend_q;
 reg [62:0] divisor_q;

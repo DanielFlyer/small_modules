@@ -1,3 +1,21 @@
+module(
+    input clk_i,
+    input rst_i,
+    input div_busy_q,
+    input dividend_q,
+    input divisor_q,
+    input inverst_res_q,
+    input quotient_q,
+    input q_mask_q,
+    input div_inst_q,
+    input div_operation_w,
+    input signed_operation_w,
+    input opcode_ra_operand_i,
+    input opcode_rb_operand_i
+
+);
+
+
 always @(posedge clk_i or posedge rst_i)
 if (rst_i)
 begin
@@ -57,3 +75,5 @@ begin
     else
         div_result_r = invert_res_q ? -dividend_q : dividend_q;
 end
+
+endmodule
