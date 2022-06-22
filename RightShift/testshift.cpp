@@ -22,10 +22,14 @@ int main(int argc, char **argv) {
         test(rand(), rand(), 0x3);
 	}
     std::cout << "Stress Testing:\n";
-    // test(4294967295, 4294967295);
-    // test(0, 0);
-    // test (4294967295, 0);
-    // test (4294967294, 4294967295);
+    test(4294967295, 4294967295, 0x3);
+    test(0, 0, 0x3);
+    test (4294967295, 0, 0x3);
+    test (4294967294, 4294967295, 0x3);
+    test(4294967295, 4294967295, 0x2);
+    test(0, 0, 0x2);
+    test (4294967295, 0, 0x2);
+    test (4294967294, 4294967295, 0x2);
 
     std::cout << "Time taken by C Implementation: "
           << cTime << " seconds" << std::endl;
