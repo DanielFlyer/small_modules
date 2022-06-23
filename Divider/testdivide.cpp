@@ -52,7 +52,12 @@ void test(word alu_a_i, word alu_b_i){
 	start = clock();
     divider->alu_a_i = alu_a_i;
     divider->alu_b_i = alu_b_i;
-	divider->eval();
+    for(int i = 0; i < 4; i++){
+        divider->clk = 1;
+	    divider->eval();
+        divider->clk = 0;
+        divider->eval();
+    }
 	end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 

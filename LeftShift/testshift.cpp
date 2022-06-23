@@ -32,6 +32,8 @@ int main(int argc, char **argv) {
     
 	std::cout << "Time taken by Verilator Simulation: "
          << verilatorTime << " seconds" << std::endl;
+
+    std::cout << 100 * (double)(verilatorTime - cTime) / cTime << "% time save\n";
 	exit(EXIT_SUCCESS);
 }
 void test(word alu_a_i, word alu_b_i){
