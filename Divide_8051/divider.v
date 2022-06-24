@@ -1,4 +1,4 @@
-module oc8051_divide (clk, rst, enable, src1, src2, des1, des2, desOv);
+module divider (clk, rst, enable, src1, src2, des1, des2, desOv);
 //
 // this module is part of alu
 // clk          (in)

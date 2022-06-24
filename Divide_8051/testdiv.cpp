@@ -3,11 +3,11 @@
 #include <time.h>
 #include "verilated.h"
 #include "./obj_dir/Vdivider.h"
-#include "divider.c"
+#include "divide.c"
 
 typedef unsigned int word;
-word divide_c(uint1_t rst, uint1_t enable, uint8_t *src1, uint8_t *src2, uint8_t *des1, uint8_t *des2, uint1_t *desOv);
-void test(uint1_t rst, uint1_t enable, uint8_t *src1, uint8_t *src2);
+//word divide_c(bool rst, bool enable, uint8_t *src1, uint8_t *src2, uint8_t *des1, uint8_t *des2, bool *desOv);
+void test(uint8_t src1, uint8_t src2);
 
 double verilatorTime;
 double cTime;
@@ -19,10 +19,7 @@ int main(int argc, char **argv) {
     cTime = 0;
     std::cout << "Stress Testing:\n";
 	for(int i = 0; i < atoi(argv[1]); i++){
-        test(0, 0, rand(), rand());
-        test(0, 1, rand(), rand());
-        test(1, 0, rand(), rand());
-        test(1, 1, rand(), rand());
+        test((uint8_t)rand(), (uint8_t)rand());
 	}
     std::cout << "Stress Testing:\n";
 
@@ -36,14 +33,17 @@ int main(int argc, char **argv) {
     std::cout << 100 * (double)(verilatorTime - cTime) / cTime << "% time save\n";
 	exit(EXIT_SUCCESS);
 }
-void test(uint1_t rst, uint1_t enable, uint8_t *src1, uint8_t *src2){
-	uint8_t *des1, *des2;
-    uint1_t *desOv;
+void test(uint8_t src1, uint8_t src2){
+	uint8_t des1, des2;
+    bool desOv;
+    //bool enable, rst;
     clock_t start, end;
 	//C Implementation 
-	
     start = clock();
-	divide_c(rst, enable, src1, src2, des1, des2, desOv);
+    std::cout << des1 << "\n";
+    std::cout << des2 << "\n";
+
+	divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
@@ -51,13 +51,11 @@ void test(uint1_t rst, uint1_t enable, uint8_t *src1, uint8_t *src2){
 
 	//Create an instance of our module under test
 	Vdivider *divider = new Vdivider;
-
-    divider->des1 = *des1;
-    divider->des2 = *des2;
-    divider->desOv = *desOv;
-    divider->rst = rst;
-    divider->enable = enable;
-	start = clock();
+    start = clock();
+    divider->src1 = src1;
+    divider->src2 = src2;
+    divider->rst = 0;
+    divider->enable = 1;
     for(int i = 0; i < 4; i++){
         divider->clk = 1;
 	    divider->eval();
@@ -68,7 +66,7 @@ void test(uint1_t rst, uint1_t enable, uint8_t *src1, uint8_t *src2){
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
 
-    if(divider->des1 != &des1 || divider->des2 != &des2 || divider->desOv != &desOv){
+    if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
         std::cout << "Error\n";
     }
         // std:: cout << "Verilog Output:" << divider->alu_p_o << "\n";
