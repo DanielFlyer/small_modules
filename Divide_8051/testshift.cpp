@@ -19,7 +19,10 @@ int main(int argc, char **argv) {
     cTime = 0;
     std::cout << "Stress Testing:\n";
 	for(int i = 0; i < atoi(argv[1]); i++){
-        test(rand(), rand(), 0x3);
+        test(0, 0, rand(), rand());
+        test(0, 1, rand(), rand());
+        test(1, 0, rand(), rand());
+        test(1, 1, rand(), rand());
 	}
     std::cout << "Stress Testing:\n";
 
@@ -49,9 +52,9 @@ void test(uint1_t rst, uint1_t enable, uint8_t *src1, uint8_t *src2){
 	//Create an instance of our module under test
 	Vdivider *divider = new Vdivider;
 
-    divider->des1 = &des1;
-    divider->des2 = &des2;
-    divider->desOv = &desOv;
+    divider->des1 = *des1;
+    divider->des2 = *des2;
+    divider->desOv = *desOv;
     divider->rst = rst;
     divider->enable = enable;
 	start = clock();
