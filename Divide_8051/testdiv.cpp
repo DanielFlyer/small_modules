@@ -40,8 +40,7 @@ void test(uint8_t src1, uint8_t src2){
     clock_t start, end;
 	//C Implementation 
     start = clock();
-    std::cout << des1 << "\n";
-    std::cout << des2 << "\n";
+
 
 	divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
 	end = clock();
@@ -68,6 +67,21 @@ void test(uint8_t src1, uint8_t src2){
 
     if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
         std::cout << "Error\n";
+        std::cout << "Source 1\n";
+        printf("%d\n", src1);
+        printf("%d\n", divider->src1);
+        std::cout << "Source 2\n";
+        printf("%d\n", src2);
+        printf("%d\n", divider->src2);
+        std::cout << "Des 1\n";
+        printf("%d\n", des1);
+        printf("%d\n", divider->des1);
+        std::cout << "Des 2\n";
+        printf("%d\n", des2);
+        printf("%d\n", divider->des2);
+        std::cout << "Des Ov\n";
+        printf("%d\n", desOv);
+        printf("%d\n", divider->desOv);
     }
         // std:: cout << "Verilog Output:" << divider->alu_p_o << "\n";
         // std:: cout << "C Output:" << out << "\n\n";
