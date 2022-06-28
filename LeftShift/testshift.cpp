@@ -7,7 +7,7 @@
 
 typedef unsigned int word;
 word shiftl_c(word alu_a_i, word alu_b_i);
-void test(word alu_a_i, word alu_b_i);
+void test(word alu_a_i, word alu_b_i, int calls);
 
 double verilatorTime;
 double cTime;
@@ -18,14 +18,7 @@ int main(int argc, char **argv) {
     verilatorTime = 0;
     cTime = 0;
     std::cout << "Stress Testing:\n";
-	for(int i = 0; i < atoi(argv[1]); i++){
-        test(rand(), rand());
-	}
-    std::cout << "Stress Testing:\n";
-    test(4294967295, 4294967295);
-    test(0, 0);
-    test (4294967295, 0);
-    test (4294967294, 4294967295);
+    test(rand(), rand(), atoi(argv[1]));
 
     std::cout << "Time taken by C Implementation: "
           << cTime << " seconds" << std::endl;
@@ -33,16 +26,27 @@ int main(int argc, char **argv) {
 	std::cout << "Time taken by Verilator Simulation: "
          << verilatorTime << " seconds" << std::endl;
 
-    std::cout << 100 * (double)(verilatorTime - cTime) / cTime << "% time save\n";
+    std::cout << verilatorTime / cTime << " times faster\n";
 	exit(EXIT_SUCCESS);
 }
-void test(word alu_a_i, word alu_b_i){
+void test(word alu_a_i, word alu_b_i, int calls){
 	word out;
     clock_t start, end;
 	//C Implementation 
 	
     start = clock();
-	out = shiftl_c(alu_a_i, alu_b_i);
+    for(int i = 0; i < calls; i++){
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    }
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
@@ -52,9 +56,38 @@ void test(word alu_a_i, word alu_b_i){
 	Vshiftl *shiftl = new Vshiftl;
 
 	start = clock();
+    for(int i = 0; i < calls; i++){
     shiftl->alu_a_i = alu_a_i;
     shiftl->alu_b_i = alu_b_i;
 	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    shiftl->alu_a_i = alu_a_i;
+    shiftl->alu_b_i = alu_b_i;
+	shiftl->eval();
+    }
 	end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
