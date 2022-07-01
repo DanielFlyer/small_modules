@@ -48,7 +48,7 @@ void test(uint8_t src1, uint8_t src2, int calls){
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
-        	    divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
