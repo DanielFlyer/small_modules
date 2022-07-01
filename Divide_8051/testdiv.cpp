@@ -18,8 +18,9 @@ int main(int argc, char **argv) {
     verilatorTime = 0;
     cTime = 0;
     std::cout << "Stress Testing:\n";
+    for(int i = 0; i < 100; i++){
     test((uint8_t)rand(), (uint8_t)rand(), atoi(argv[1]));
-
+    }
     std::cout << "Time taken by C Implementation: "
           << cTime << " seconds" << std::endl;
     
@@ -45,8 +46,18 @@ void test(uint8_t src1, uint8_t src2, int calls){
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
         divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
-        divide_c(0, 0, &src1, &src2, &des1, &des2, &desOv);
+        	    divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
+        // divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
+        // divide_c(1, 1, &src1, &src2, &des1, &des2, &desOv);
     }
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
@@ -56,9 +67,9 @@ void test(uint8_t src1, uint8_t src2, int calls){
 	//Create an instance of our module under test
 	Vdivider *divider = new Vdivider;
     start = clock();
+    divider->src1 = src1;
+    divider->src2 = src2;
     for(int i = 0; i < calls; i++){
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -67,8 +78,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -77,8 +86,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -87,8 +94,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -97,8 +102,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -107,8 +110,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -117,8 +118,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -127,8 +126,6 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
         divider->enable = 1;
         for(int j = 0; j < 4; j++){
@@ -137,8 +134,14 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
         divider->rst = 1;
         divider->enable = 0;
         for(int j = 0; j < 4; j++){
@@ -147,16 +150,86 @@ void test(uint8_t src1, uint8_t src2, int calls){
             divider->clk = 0;
             divider->eval();
         }
-        divider->src1 = src1;
-        divider->src2 = src2;
         divider->rst = 0;
-        divider->enable = 0;
+        divider->enable = 1;
         for(int j = 0; j < 4; j++){
             divider->clk = 1;
             divider->eval();
             divider->clk = 0;
             divider->eval();
         }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        divider->rst = 0;
+        divider->enable = 1;
+        for(int j = 0; j < 4; j++){
+            divider->clk = 1;
+            divider->eval();
+            divider->clk = 0;
+            divider->eval();
+        }
+        // divider->rst = 1;
+        // divider->enable = 0;
+        // for(int j = 0; j < 4; j++){
+        //     divider->clk = 1;
+        //     divider->eval();
+        //     divider->clk = 0;
+        //     divider->eval();
+        // }
+        // divider->rst = 1;
+        // divider->enable = 1;
+        // for(int j = 0; j < 4; j++){
+        //     divider->clk = 1;
+        //     divider->eval();
+        //     divider->clk = 0;
+        //     divider->eval();
+        // }
     }
 	end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
