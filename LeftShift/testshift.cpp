@@ -106,7 +106,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -146,7 +145,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -186,7 +184,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -226,7 +223,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -266,7 +262,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -306,7 +301,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -346,7 +340,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -386,7 +379,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -426,7 +418,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -466,7 +457,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -506,7 +496,6 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -546,7 +535,18 @@ word callc(word alu_a_i, word alu_b_i){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
-        out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
+    out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
