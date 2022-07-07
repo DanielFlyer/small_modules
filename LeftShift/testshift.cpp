@@ -38,10 +38,9 @@ void test(word alu_a_i, word alu_b_i, int calls){
 	word out;
     clock_t start, end;
 	//C Implementation 
-	
-
-    for(int i = 0; i < calls; i++){
+    out = shiftl_c(alu_a_i, alu_b_i);
     start = clock();
+    for(int i = 0; i < calls; i++){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -542,10 +541,12 @@ void test(word alu_a_i, word alu_b_i, int calls){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
+    }
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
     start = clock();
+    for(int i = 0; i < calls; i++){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
@@ -1546,9 +1547,9 @@ void test(word alu_a_i, word alu_b_i, int calls){
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
     out = shiftl_c(alu_a_i, alu_b_i);
+    }
 	end = clock();
     cTime2 += ((double) (end - start)) / CLOCKS_PER_SEC;
-}
 
 	//Verilator simulation
 
@@ -1556,9 +1557,10 @@ void test(word alu_a_i, word alu_b_i, int calls){
 	Vshiftl *shiftl = new Vshiftl;
     shiftl->alu_a_i = alu_a_i;
     shiftl->alu_b_i = alu_b_i;
-    for(int i = 0; i < calls; i++){
+        shiftl->eval();
+    
 	start = clock();
-
+    for(int i = 0; i < calls; i++){
     shiftl->eval();
     shiftl->eval();
     shiftl->eval();
@@ -2059,11 +2061,12 @@ void test(word alu_a_i, word alu_b_i, int calls){
     shiftl->eval();
     shiftl->eval();
     shiftl->eval();
+    }
 	end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
     	start = clock();
-shiftl->eval();
+    for(int i = 0; i < calls; i++){
     shiftl->eval();
     shiftl->eval();
     shiftl->eval();
@@ -3063,9 +3066,10 @@ shiftl->eval();
     shiftl->eval();
     shiftl->eval();
     shiftl->eval();
+    shiftl->eval();
+    }
 	end = clock();
     verilatorTime2 += ((double) (end - start)) / CLOCKS_PER_SEC;
-}
 
     if(shiftl->alu_p_o != out){
         std::cout << "Error\n";
