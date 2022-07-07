@@ -6,11 +6,12 @@
 
 #include "Vshiftr___024root.h"
 
-VL_INLINE_OPT void Vshiftr___024root___combo__TOP__0__PROF__shiftr__l22(Vshiftr___024root* vlSelf) {
+VL_INLINE_OPT void Vshiftr___024root___combo__TOP__0(Vshiftr___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vshiftr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vshiftr___024root___combo__TOP__0__PROF__shiftr__l22\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vshiftr___024root___combo__TOP__0\n"); );
     // Init
+    IData/*31:0*/ shiftr__DOT__result_r;
     SData/*15:0*/ shiftr__DOT__shift_right_fill_r;
     IData/*31:0*/ shiftr__DOT__shift_right_1_r;
     IData/*31:0*/ shiftr__DOT__shift_right_2_r;
@@ -45,20 +46,12 @@ VL_INLINE_OPT void Vshiftr___024root___combo__TOP__0__PROF__shiftr__l22(Vshiftr_
                                             << 0x10U)) 
                                         | (shiftr__DOT__shift_right_4_r 
                                            >> 8U)) : shiftr__DOT__shift_right_4_r);
-    vlSelf->shiftr__DOT__result_r = ((0x10U & vlSelf->alu_b_i)
-                                      ? (((IData)(shiftr__DOT__shift_right_fill_r) 
-                                          << 0x10U) 
-                                         | (shiftr__DOT__shift_right_8_r 
-                                            >> 0x10U))
-                                      : shiftr__DOT__shift_right_8_r);
-}
-
-VL_INLINE_OPT void Vshiftr___024root___combo__TOP__1__PROF__shiftr__l59(Vshiftr___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vshiftr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vshiftr___024root___combo__TOP__1__PROF__shiftr__l59\n"); );
-    // Body
-    vlSelf->alu_p_o = vlSelf->shiftr__DOT__result_r;
+    shiftr__DOT__result_r = ((0x10U & vlSelf->alu_b_i)
+                              ? (((IData)(shiftr__DOT__shift_right_fill_r) 
+                                  << 0x10U) | (shiftr__DOT__shift_right_8_r 
+                                               >> 0x10U))
+                              : shiftr__DOT__shift_right_8_r);
+    vlSelf->alu_p_o = shiftr__DOT__result_r;
 }
 
 void Vshiftr___024root___eval(Vshiftr___024root* vlSelf) {
@@ -66,8 +59,7 @@ void Vshiftr___024root___eval(Vshiftr___024root* vlSelf) {
     Vshiftr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vshiftr___024root___eval\n"); );
     // Body
-    Vshiftr___024root___combo__TOP__0__PROF__shiftr__l22(vlSelf);
-    Vshiftr___024root___combo__TOP__1__PROF__shiftr__l59(vlSelf);
+    Vshiftr___024root___combo__TOP__0(vlSelf);
 }
 
 #ifdef VL_DEBUG

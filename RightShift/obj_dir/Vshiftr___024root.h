@@ -16,7 +16,6 @@ VL_MODULE(Vshiftr___024root) {
     VL_IN(alu_a_i,31,0);
     VL_IN(alu_b_i,31,0);
     VL_OUT(alu_p_o,31,0);
-    IData/*31:0*/ shiftr__DOT__result_r;
 
     // INTERNAL VARIABLES
     Vshiftr__Syms* const vlSymsp;
