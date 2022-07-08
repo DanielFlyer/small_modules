@@ -6,7 +6,7 @@ void divide_c(bool rst, bool enable, uint8_t *src1, uint8_t *src2, uint8_t *des1
     if(rst || !enable){
         *des1 = *src1;
         *des2 = 0;
-        *desOv = 0;
+        *desOv = (*src2 == 0);
         return;
     }
     if(enable){
