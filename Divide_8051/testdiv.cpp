@@ -40,220 +40,47 @@ void test(uint8_t src1, uint8_t src2){
     bool desOv;
     //bool enable, rst;
     clock_t start, end;
-	//C Implementation 
-    // start = clock();
+    Vdivider *divider = new Vdivider;
 
-	//     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
-    //     // divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
-    //     // divide_c(1, 1, &src1, &src2, &des1, &des2, &desOv);
+    // Reset 1, Enable 0
 
-	// end = clock();
-    // cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
+    //C Implementation 
+    start = clock();
+	divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
+	end = clock();
+    cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
-	// //Verilator simulation
+	//Verilator simulation
+    start = clock();
+    divider->src1 = src1;
+    divider->src2 = src2;
+    divider->rst = 1;
+    divider->enable = 0;
+    divider->clk = 1;
+	divider->eval();
+    divider->clk = 0;
+    divider->eval();
+	end = clock();
+    verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
+    if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
+        std::cout << "Error 1\n";
+        std::cout << "Source 1\n";
+        printf("%d\n", src1);
+        printf("%d\n", divider->src1);
+        std::cout << "Source 2\n";
+        printf("%d\n", src2);
+        printf("%d\n", divider->src2);
+        std::cout << "Des 1\n";
+        printf("%d\n", des1);
+        printf("%d\n", divider->des1);
+        std::cout << "Des 2\n";
+        printf("%d\n", des2);
+        printf("%d\n", divider->des2);
+        std::cout << "Des Ov\n";
+        printf("%d\n", desOv);
+        printf("%d\n", divider->desOv);
+    }
 
-	// //Create an instance of our module under test
-	// Vdivider *divider = new Vdivider;
-    // divider->src1 = src1;
-    // divider->src2 = src2;
-    // start = clock();
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 1;
-    //     divider->enable = 0;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     divider->rst = 0;
-    //     divider->enable = 1;
-    //     for(int j = 0; j < 4; j++){
-    //         divider->clk = 1;
-    //         divider->eval();
-    //         divider->clk = 0;
-    //         divider->eval();
-    //     }
-    //     // divider->rst = 1;
-    //     // divider->enable = 0;
-    //     // for(int j = 0; j < 4; j++){
-    //     //     divider->clk = 1;
-    //     //     divider->eval();
-    //     //     divider->clk = 0;
-    //     //     divider->eval();
-    //     // }
-    //     // divider->rst = 1;
-    //     // divider->enable = 1;
-    //     // for(int j = 0; j < 4; j++){
-    //     //     divider->clk = 1;
-    //     //     divider->eval();
-    //     //     divider->clk = 0;
-    //     //     divider->eval();
-    //     // }
-	// end = clock();
-    // verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-    // if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
-    //     std::cout << "Error\n";
-    //     std::cout << "Source 1\n";
-    //     printf("%d\n", src1);
-    //     printf("%d\n", divider->src1);
-    //     std::cout << "Source 2\n";
-    //     printf("%d\n", src2);
-    //     printf("%d\n", divider->src2);
-    //     std::cout << "Des 1\n";
-    //     printf("%d\n", des1);
-    //     printf("%d\n", divider->des1);
-    //     std::cout << "Des 2\n";
-    //     printf("%d\n", des2);
-    //     printf("%d\n", divider->des2);
-    //     std::cout << "Des Ov\n";
-    //     printf("%d\n", desOv);
-    //     printf("%d\n", divider->desOv);
-    // }
 
     // Reset 0, Enable 1
 
@@ -263,13 +90,12 @@ void test(uint8_t src1, uint8_t src2){
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
     //Verilator simulation
-    Vdivider *divider = new Vdivider;
     start = clock();
     divider->src1 = src1;
     divider->src2 = src2;
     divider->rst = 0;
     divider->enable = 1;
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < 3; i++){
         divider->clk = 1;
 	    divider->eval();
         divider->clk = 0;
@@ -296,31 +122,28 @@ void test(uint8_t src1, uint8_t src2){
         printf("%d\n", desOv);
         printf("%d\n", divider->desOv);
     }
-    // Reset 0, Enable 0
+
+    // Reset 1, Enable 0
 
     //C Implementation 
     start = clock();
-	divide_c(0, 0, &src1, &src2, &des1, &des2, &desOv);
+	divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
 	//Verilator simulation
-
-
     start = clock();
     divider->src1 = src1;
     divider->src2 = src2;
-    divider->rst = 0;
+    divider->rst = 1;
     divider->enable = 0;
-    for(int i = 0; i < 4; i++){
-        divider->clk = 1;
-	    divider->eval();
-        divider->clk = 0;
-        divider->eval();
-    }
+    divider->clk = 1;
+	divider->eval();
+    divider->clk = 0;
+    divider->eval();
 	end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
+    if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
         std::cout << "Error 3\n";
         std::cout << "Source 1\n";
         printf("%d\n", src1);
@@ -338,59 +161,21 @@ if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
         printf("%d\n", desOv);
         printf("%d\n", divider->desOv);
     }
-        //C Implementation 
-    start = clock();
-	divide_c(1, 1, &src1, &src2, &des1, &des2, &desOv);
-	end = clock();
-    cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
-	//Verilator simulation
+    // Reset 0, Enable 1
 
-    start = clock();
-    divider->src1 = src1;
-    divider->src2 = src2;
-    divider->rst = 1;
-    divider->enable = 1;
-    for(int i = 0; i < 4; i++){
-        divider->clk = 1;
-	    divider->eval();
-        divider->clk = 0;
-        divider->eval();
-    }
-	end = clock();
-    verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
-        std::cout << "Error 4\n";
-        std::cout << "Source 1\n";
-        printf("%d\n", src1);
-        printf("%d\n", divider->src1);
-        std::cout << "Source 2\n";
-        printf("%d\n", src2);
-        printf("%d\n", divider->src2);
-        std::cout << "Des 1\n";
-        printf("%d\n", des1);
-        printf("%d\n", divider->des1);
-        std::cout << "Des 2\n";
-        printf("%d\n", des2);
-        printf("%d\n", divider->des2);
-        std::cout << "Des Ov\n";
-        printf("%d\n", desOv);
-        printf("%d\n", divider->desOv);
-    }
     //C Implementation 
     start = clock();
 	divide_c(0, 1, &src1, &src2, &des1, &des2, &desOv);
 	end = clock();
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-
-	//Verilator simulation
-
+    //Verilator simulation
     start = clock();
     divider->src1 = src1;
     divider->src2 = src2;
     divider->rst = 0;
     divider->enable = 1;
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < 3; i++){
         divider->clk = 1;
 	    divider->eval();
         divider->clk = 0;
@@ -398,49 +183,9 @@ if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
     }
 	end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
-        std::cout << "Error 5\n";
-        std::cout << "Source 1\n";
-        printf("%d\n", src1);
-        printf("%d\n", divider->src1);
-        std::cout << "Source 2\n";
-        printf("%d\n", src2);
-        printf("%d\n", divider->src2);
-        std::cout << "Des 1\n";
-        printf("%d\n", des1);
-        printf("%d\n", divider->des1);
-        std::cout << "Des 2\n";
-        printf("%d\n", des2);
-        printf("%d\n", divider->des2);
-        std::cout << "Des Ov\n";
-        printf("%d\n", desOv);
-        printf("%d\n", divider->desOv);
-    }
-        //C Implementation 
-    start = clock();
-	divide_c(1, 0, &src1, &src2, &des1, &des2, &desOv);
-	end = clock();
-    cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-
-	//Verilator simulation
-
-    start = clock();
-    divider->src1 = src1;
-    divider->src2 = src2;
-    divider->rst = 1;
-    divider->enable = 0;
-    for(int i = 0; i < 4; i++){
-        divider->clk = 1;
-	    divider->eval();
-        divider->clk = 0;
-        divider->eval();
-    }
-	end = clock();
-    verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
-
 
     if(divider->des1 != des1 || divider->des2 != des2 || divider->desOv != desOv){
-        std::cout << "Error 6\n";
+        std::cout << "Error 4\n";
         std::cout << "Source 1\n";
         printf("%d\n", src1);
         printf("%d\n", divider->src1);
