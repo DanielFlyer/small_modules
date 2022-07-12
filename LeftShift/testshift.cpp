@@ -3072,6 +3072,10 @@ void test(word alu_a_i, word alu_b_i){
 
     if(shiftl->alu_p_o != out){
         std::cout << "Error\n";
+        std::cout << alu_a_i << " ";
+        std::cout << alu_b_i << " ";
+        std::cout << shiftl->alu_p_o << " ";
+        std::cout << out << " ";
     }
         // std:: cout << "Verilog Output:" << shiftl->alu_p_o << "\n";
         // std:: cout << "C Output:" << out << "\n\n";
