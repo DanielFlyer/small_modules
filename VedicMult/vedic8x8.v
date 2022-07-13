@@ -3,7 +3,7 @@ module vedic8x8(input [7:0] a,b, output [15:0] prod);
 	wire [7:0] mult0, mult1, mult2, mult3;
 	wire [7:0] sum0;
 	wire [11:0] sum1, sum2;
-	wire carry0, carry2, carry3;
+	wire carry0, carry1, carry2;
 
 	vedic4x4 VD0(a[3:0],b[3:0],mult0);
 	vedic4x4 VD1(a[3:0],b[7:4],mult1);

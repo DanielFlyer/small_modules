@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stddef.h>
 
-uint16_t multiply_c(uint8_t a, uint8_t b){
-    return (uint16_t)a*b;
+typedef unsigned char uint8;
+typedef unsigned short uint16;
+
+
+uint16 multiply_c(uint8 a, uint8 b){
+    return (uint16)a*(uint16)b;
 }
