@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
     cTime2 = 0;
     //std::cout << "Stress Testing:\n";
     for(int i = 0; i < atoi(argv[1]); i++){
-        test((uint8)rand(), (uint8)rand());
+        test(rand(), rand());
     }
 
     // std::cout << "Time taken by C Implementation: "
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
     std::cout << cTime << " " << cTime2 << " " << verilatorTime << " " << verilatorTime2;
 	exit(EXIT_SUCCESS);
 }
-void test(uint8 a, uint16 b){
+void test(uint8 a, uint8 b){
 	volatile uint16 out;
     clock_t start, end;
 	//C Implementation 
