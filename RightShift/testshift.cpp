@@ -3,7 +3,7 @@
 #include <time.h>
 #include "verilated.h"
 #include "./obj_dir/Vshiftr.h"
-#include "shiftr.c"
+#include "barrelshiftr.c"
 
 typedef unsigned int word;
 word shiftr_c(word alu_a_i, word alu_b_i, char opcode);
