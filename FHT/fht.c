@@ -6,5 +6,5 @@ typedef unsigned char uint8;
 
 uint8 fht_c(bool reset, uint8 data_i){
 
-
+    return 0;
 }
