@@ -4,7 +4,7 @@
 #include <chrono>
 #include "verilated.h"
 #include "./obj_dir/Vshiftl.h"
-#include "barrelshiftl.c"
+#include "shiftl.c"
 
 typedef unsigned int word;
 word shiftl_c(word alu_a_i, word alu_b_i);

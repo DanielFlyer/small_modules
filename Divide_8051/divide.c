@@ -4,7 +4,7 @@
 
 void divide_c(bool rst, bool enable, uint8_t *src1, uint8_t *src2, uint8_t *des1, uint8_t *des2, bool *desOv){
     if(rst || !enable){
-        uint16_t cmp1, cmp0, rem2, sub1, div1, rem1, sub0, div0, rem0;
+        volatile uint16_t cmp1, cmp0, rem2, sub1, div1, rem1, sub0, div0, rem0;
         // *des1 = *src1;
         // *des2 = 0;
         cmp1 = (uint16_t)*src2 << 7;

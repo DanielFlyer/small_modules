@@ -3,7 +3,7 @@
 
 unsigned int shiftl_c(unsigned int alu_a_i, unsigned int alu_b_i){
 
-    unsigned int result_r, shift_left_1_r, shift_left_2_r, shift_left_4_r, shift_left_8_r;
+    volatile unsigned int result_r, shift_left_1_r, shift_left_2_r, shift_left_4_r, shift_left_8_r;
     //alu_b_i = 0x1f & alu_b_i;
     if ((alu_b_i & 0x1) != 0)
                 shift_left_1_r = alu_a_i << 1;
