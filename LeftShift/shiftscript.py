@@ -4,7 +4,7 @@ c1Total = 0
 c2Total = 0
 v1Total = 0
 v2Total = 0
-for i in range(1000):
+for i in range(500):
     result = subprocess.run(["./obj_dir/Vshiftl", "10000"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     s = result.stdout
     temp = [float(f) for f in s.split(' ')]

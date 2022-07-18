@@ -47,6 +47,9 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "stddef.h": "c"
+        "stddef.h": "c",
+        "shiftl.c": "cpp",
+        "testcase.c": "cpp",
+        "barrelshiftl.c": "cpp"
     }
 }
