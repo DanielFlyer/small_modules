@@ -50,6 +50,7 @@
         "stddef.h": "c",
         "shiftl.c": "cpp",
         "testcase.c": "cpp",
-        "barrelshiftl.c": "cpp"
+        "barrelshiftl.c": "cpp",
+        "shiftr.c": "cpp"
     }
 }

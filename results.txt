@@ -1,7 +1,7 @@
-Left Shift (simplified) -> 11.5x speed up
-Left Shift (Barrel shift translation) -> 31.5x speed up
-Right Shift (simplified) -> 12.25x speed up
-Right Shift (Barrel shift translation) -> 64.5x speed up
-Divide 8051 -> 11.5x speed up
+Left Shift (simplified) -> 7.9x speed up
+Left Shift (Barrel shift translation) -> 1.2x speed up
+Right Shift (simplified) -> 5.27x speed up
+Right Shift (Barrel shift translation) -> .54x (slower)
+Divide 8051 -> 8.88x speed up
 Vedic Multiply -> 600x speed up
 Mod3 -> 15.5x speed up

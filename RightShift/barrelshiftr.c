@@ -3,7 +3,7 @@
 
 unsigned int shiftr_c(unsigned int alu_a_i, unsigned int alu_b_i, char opcode){
 
-    unsigned int result_r, shift_right_1_r, shift_right_2_r, shift_right_4_r, shift_right_8_r;
+    volatile unsigned int result_r, shift_right_1_r, shift_right_2_r, shift_right_4_r, shift_right_8_r;
 
     opcode = opcode & 0xf;
     if(opcode == 0x3){
