@@ -49,9 +49,8 @@ void test(uint8 data_i){
         fht->clk = 0;
         fht->eval();
     }
-    std:: cout << (int)(fht->data_o) << std::endl;
     fht->reset = 1;
-    for(int i = 0; i < 8; i++){
+    for(int i = 0; i < 30; i++){
         fht->clk = 1;
         fht->eval();
         fht->clk = 0;

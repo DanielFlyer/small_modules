@@ -26,6 +26,10 @@ int main(int argc, char **argv) {
     for(int i = 0; i < atoi(argv[1]); i++){
         test(rand(), rand());
     }
+    // Corner Cases
+    test(0, 0);
+    test(255, 255);
+    test(0, 255);
 
     // std::cout << "Time taken by C Implementation: "
     //       << cTime << " seconds" << std::endl;

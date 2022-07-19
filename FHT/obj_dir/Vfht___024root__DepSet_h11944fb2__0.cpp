@@ -16,6 +16,7 @@ VL_INLINE_OPT void Vfht___024root___sequent__TOP__0(Vfht___024root* vlSelf) {
             vlSelf->data_o = vlSelf->fht__DOT__temp;
         }
         vlSelf->fht__DOT__data_d = vlSelf->data_i;
+        vlSelf->fht__DOT__temp_d = vlSelf->fht__DOT__temp;
         vlSelf->fht__DOT__comp_d = ((0x80U & ((((IData)(vlSelf->fht__DOT__temp) 
                                                 >> 6U) 
                                                - ((IData)(vlSelf->fht__DOT__temp) 
@@ -65,7 +66,6 @@ VL_INLINE_OPT void Vfht___024root___sequent__TOP__0(Vfht___024root* vlSelf) {
                                                             + 
                                                             ((IData)(vlSelf->fht__DOT__temp) 
                                                              >> 1U))))))))));
-        vlSelf->fht__DOT__temp_d = vlSelf->fht__DOT__temp;
         vlSelf->fht__DOT__cnt = ((3U > (IData)(vlSelf->fht__DOT__cnt))
                                   ? (3U & ((IData)(1U) 
                                            + (IData)(vlSelf->fht__DOT__cnt)))
@@ -73,8 +73,8 @@ VL_INLINE_OPT void Vfht___024root___sequent__TOP__0(Vfht___024root* vlSelf) {
     } else {
         vlSelf->data_o = 0U;
         vlSelf->fht__DOT__data_d = 0U;
-        vlSelf->fht__DOT__comp_d = 0U;
         vlSelf->fht__DOT__temp_d = 0U;
+        vlSelf->fht__DOT__comp_d = 0U;
         vlSelf->fht__DOT__cnt = 0U;
     }
     vlSelf->fht__DOT__data_valid = ((0U != (IData)(vlSelf->fht__DOT__cnt)) 

@@ -25,6 +25,14 @@ int main(int argc, char **argv) {
         test(rand(), rand());
     }
 
+    // Corner Cases
+    test(0, 0);
+    test(5, 0);
+    test(0, 5);
+    test(255, 255);
+    test(255, 0);
+    test(255,1);
+
     // std::cout << "Time taken by C Implementation: "
     //       << cTime << " seconds" << std::endl;
     
