@@ -54,23 +54,23 @@ begin
   end
   case(cnt)
   2'b00 : begin
-	    temp  =  data_d  ;
-	    data_valid = 'b0 ;
+	    temp  <=  data_d  ;
+	    data_valid <= 'b0 ;
 	  end
 
   2'b01 : begin
-	    temp  =  comp_d  ;
-	    data_valid = 'b0 ;
+	    temp  <=  comp_d  ;
+	    data_valid <= 'b0 ;
 	  end
 	  
   2'b10 : begin
-	    temp  =  comp_d  ;
-	    data_valid = 'b1 ;
+	    temp  <=  comp_d  ;
+	    data_valid <= 'b1 ;
 	  end
     
   default : begin
-	    temp = temp_d    ;
-	    data_valid = 'b0 ;
+	    temp <= temp_d    ;
+	    data_valid <= 'b0 ;
     end
   endcase
 end
