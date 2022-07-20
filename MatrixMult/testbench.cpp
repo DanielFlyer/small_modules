@@ -11,3 +11,4 @@ int main(int argc, char **argv) {
     //Create an instance of our module under test
 	Vtb *tb = new Vtb;
     tb->eval();
+    std::cout << tb->AB00_80;
