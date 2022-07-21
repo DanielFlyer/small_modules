@@ -4,6 +4,7 @@
 //	San Jose State University
 //	EE 278
 //*****************************************************************//
+`timescale 1ns/100ps
 
 module tb;
 reg clk_80,rst_80;
