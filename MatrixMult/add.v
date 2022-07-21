@@ -68,8 +68,6 @@ module add (
 				.overflow (sub_wire0),
 				.cout (sub_wire1),
 				.result (sub_wire2));
-	defparam
-		LPM_ADD_SUB_component.lpm_width = 11;
 endmodule
 
 // ============================================================
