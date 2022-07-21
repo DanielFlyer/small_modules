@@ -67,24 +67,9 @@ module add (
 				.dataa (dataa),
 				.overflow (sub_wire0),
 				.cout (sub_wire1),
-				.result (sub_wire2)
-				// synopsys translate_off
-				,
-				.aclr (),
-				.add_sub (),
-				.cin (),
-				.clken (),
-				.clock ()
-				// synopsys translate_on
-				);
+				.result (sub_wire2));
 	defparam
-		LPM_ADD_SUB_component.lpm_direction = "ADD",
-		LPM_ADD_SUB_component.lpm_hint = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO",
-		LPM_ADD_SUB_component.lpm_representation = "SIGNED",
-		LPM_ADD_SUB_component.lpm_type = "LPM_ADD_SUB",
 		LPM_ADD_SUB_component.lpm_width = 11;
-
-
 endmodule
 
 // ============================================================
