@@ -5,3 +5,6 @@ Right Shift (Barrel shift translation) -> .54x (slower)
 Divide 8051 (3 clock cycles) -> 9x speed up (15x without exact reset behavior)
 Vedic Multiply -> 500x speed up
 Mod3 -> 15.5x speed up
+aes_128 -> 38x speed up
+aes_192 -> 30x speed up
+aes_256 -> 28x speed up
