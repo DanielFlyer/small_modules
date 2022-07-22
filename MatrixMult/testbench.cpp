@@ -3,7 +3,7 @@
 #include <time.h>
 #include "verilated.h"
 #include "./obj_dir/Vmat_mult.h"
-//#include "matrixmult.c"
+#include "matrixmult.c"
 
 int main(int argc, char **argv) {
     //Initialize Verilators variables
@@ -34,4 +34,6 @@ int main(int argc, char **argv) {
     }
 
     std::cout << mat_mult->AB00_80 << std::endl;
+
+    std::cout << mat_mult_c(10, 20, 30, 40, 13, 77, 102, 205) << std::endl;
 }
