@@ -25,7 +25,10 @@ VL_MODULE(Vmat_mult___024root) {
     VL_IN16(A02_80,8,0);
     VL_IN16(A03_80,8,0);
     VL_OUT16(AB00_80,10,0);
+    SData/*10:0*/ mat_mult__DOT__a0_in_80;
+    SData/*10:0*/ mat_mult__DOT__a1_in_80;
     SData/*10:0*/ mat_mult__DOT__a2_in_80;
+    SData/*11:0*/ mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum;
 
     // INTERNAL VARIABLES
     Vmat_mult__Syms* const vlSymsp;

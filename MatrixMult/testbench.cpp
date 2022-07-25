@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
         mat_mult->clk_80 = 0;
         mat_mult->eval();
     }
-
+    
     std::cout << mat_mult->AB00_80 << std::endl;
 
     std::cout << mat_mult_c(10, 20, 30, 40, 13, 77, 102, 205) << std::endl;

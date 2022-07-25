@@ -47,6 +47,14 @@ clk_80, rst_80, AB00_80);
 
         always @ (A00_80  or B00_80)
         begin
+                $display(A00_80);                        
+                $display(A01_80);
+                $display(A02_80);
+                $display(A03_80);        
+                $display(B00_80);                        
+                $display(B01_80);
+                $display(B02_80);
+                $display(B03_80);
 
                 if ((A00_80[WIDTH_A_80-1] == 1'b1) && (A00_80[WIDTH_A_80-2 : 0] == 0))
                         A00_80_corrected = A00_80 + 1;
@@ -103,6 +111,15 @@ clk_80, rst_80, AB00_80);
 
                 else
                         B03_80_corrected = B03_80;
+                $display(A00_80_corrected);                        
+                $display(A01_80_corrected);
+                $display(A02_80_corrected);
+                $display(A03_80_corrected);        
+                $display(B00_80_corrected);                        
+                $display(B01_80_corrected);
+                $display(B02_80_corrected);
+                $display(B03_80_corrected);
+
         end
 
         // MULTIPLIER
