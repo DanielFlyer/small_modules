@@ -30,6 +30,8 @@ reg      [ WIDTH_PROD_ROUNDED - 1:0 ]   prod_rounded_80;
         //              * If the next bit is 0, just truncate
 always @ (prod_80)
 begin
+   $display("Rounding:");   
+   $display(prod_80);
         if ( prod_80[WIDTH_PROD-1] == 1'b0 )
         begin
                 if ( & prod_80[(WIDTH_PROD-2-1):(WIDTH_PROD_ROUNDED-1)] )
@@ -55,6 +57,7 @@ begin
                       prod_rounded_80 <= prod_80[(WIDTH_PROD-2):(WIDTH_PROD-2-(WIDTH_PROD_ROUNDED-1))];
                 end
         end
+      $display(prod_rounded_80);
 end
 
 endmodule

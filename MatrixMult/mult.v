@@ -58,6 +58,12 @@ module mult (
 				.dataa (dataa),
 				.datab (datab),
 				.result (sub_wire0));
+	always @ (*) begin
+		$display("Multiply:");
+		$display(datab);
+		$display(dataa);
+		$display(result);
+	end
 endmodule
 
 // ============================================================

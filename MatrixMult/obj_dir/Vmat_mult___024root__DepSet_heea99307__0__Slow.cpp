@@ -77,6 +77,12 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                 ((IData)(1U) 
                                                  + (IData)(vlSelf->B02_80))
                                                  : (IData)(vlSelf->B02_80)));
+    VL_WRITEF("Multiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
+              8,mat_mult__DOT__B00_80_corrected,9,(IData)(mat_mult__DOT__A00_80_corrected),
+              17,(0x1ffffU & ((IData)(mat_mult__DOT__A00_80_corrected) 
+                              * (IData)(mat_mult__DOT__B00_80_corrected))),
+              17,(0x1ffffU & ((IData)(mat_mult__DOT__A00_80_corrected) 
+                              * (IData)(mat_mult__DOT__B00_80_corrected))));
     mat_mult__DOT__product0_rounded_80 = (0x1ffU & 
                                           ((0x10000U 
                                             & ((IData)(mat_mult__DOT__A00_80_corrected) 
@@ -135,6 +141,14 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                     & (((IData)(mat_mult__DOT__A00_80_corrected) 
                                                         * (IData)(mat_mult__DOT__B00_80_corrected)) 
                                                        >> 7U))))));
+    VL_WRITEF("%3#\nMultiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
+              9,mat_mult__DOT__product0_rounded_80,
+              8,(IData)(mat_mult__DOT__B01_80_corrected),
+              9,mat_mult__DOT__A01_80_corrected,17,
+              (0x1ffffU & ((IData)(mat_mult__DOT__A01_80_corrected) 
+                           * (IData)(mat_mult__DOT__B01_80_corrected))),
+              17,(0x1ffffU & ((IData)(mat_mult__DOT__A01_80_corrected) 
+                              * (IData)(mat_mult__DOT__B01_80_corrected))));
     mat_mult__DOT__product1_rounded_80 = (0x1ffU & 
                                           ((0x10000U 
                                             & ((IData)(mat_mult__DOT__A01_80_corrected) 
@@ -193,6 +207,14 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                     & (((IData)(mat_mult__DOT__A01_80_corrected) 
                                                         * (IData)(mat_mult__DOT__B01_80_corrected)) 
                                                        >> 7U))))));
+    VL_WRITEF("%3#\nMultiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
+              9,mat_mult__DOT__product1_rounded_80,
+              8,(IData)(mat_mult__DOT__B02_80_corrected),
+              9,mat_mult__DOT__A02_80_corrected,17,
+              (0x1ffffU & ((IData)(mat_mult__DOT__A02_80_corrected) 
+                           * (IData)(mat_mult__DOT__B02_80_corrected))),
+              17,(0x1ffffU & ((IData)(mat_mult__DOT__A02_80_corrected) 
+                              * (IData)(mat_mult__DOT__B02_80_corrected))));
     mat_mult__DOT__product2_rounded_80 = (0x1ffU & 
                                           ((0x10000U 
                                             & ((IData)(mat_mult__DOT__A02_80_corrected) 
@@ -251,6 +273,7 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                     & (((IData)(mat_mult__DOT__A02_80_corrected) 
                                                         * (IData)(mat_mult__DOT__B02_80_corrected)) 
                                                        >> 7U))))));
+    VL_WRITEF("%3#\n",9,mat_mult__DOT__product2_rounded_80);
     mat_mult__DOT__A03_80_corrected = (0x1ffU & ((IData)(
                                                          (0x100U 
                                                           == (IData)(vlSelf->A03_80)))
@@ -291,6 +314,12 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                                >> 8U)))) 
                                                 << 9U)) 
                                             | (IData)(mat_mult__DOT__product2_rounded_80));
+    VL_WRITEF("Multiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
+              8,mat_mult__DOT__B03_80_corrected,9,(IData)(mat_mult__DOT__A03_80_corrected),
+              17,(0x1ffffU & ((IData)(mat_mult__DOT__A03_80_corrected) 
+                              * (IData)(mat_mult__DOT__B03_80_corrected))),
+              17,(0x1ffffU & ((IData)(mat_mult__DOT__A03_80_corrected) 
+                              * (IData)(mat_mult__DOT__B03_80_corrected))));
     mat_mult__DOT__product3_rounded_80 = (0x1ffU & 
                                           ((0x10000U 
                                             & ((IData)(mat_mult__DOT__A03_80_corrected) 
@@ -349,6 +378,7 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                     & (((IData)(mat_mult__DOT__A03_80_corrected) 
                                                         * (IData)(mat_mult__DOT__B03_80_corrected)) 
                                                        >> 7U))))));
+    VL_WRITEF("%3#\n",9,mat_mult__DOT__product3_rounded_80);
     mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum 
         = (0xfffU & ((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
                      + (IData)(mat_mult__DOT____Vcellinp__a0__datab)));
@@ -359,7 +389,10 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                                >> 8U)))) 
                                                 << 9U)) 
                                             | (IData)(mat_mult__DOT__product3_rounded_80));
-    VL_WRITEF("%4#\n",11,(0x7ffU & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)));
+    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n",11,mat_mult__DOT____Vcellinp__a0__datab,
+              11,(IData)(mat_mult__DOT____Vcellinp__a0__dataa),
+              11,(0x7ffU & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)),
+              11,(0x7ffU & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)));
     vlSelf->mat_mult__DOT__a0_in_80 = (0x7ffU & ((0x800U 
                                                   & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum))
                                                   ? 
@@ -420,7 +453,10 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
     mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum 
         = (0xfffU & ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
                      + (IData)(mat_mult__DOT____Vcellinp__a1__datab)));
-    VL_WRITEF("%4#\n",11,(0x7ffU & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)));
+    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n",11,mat_mult__DOT____Vcellinp__a1__datab,
+              11,(IData)(mat_mult__DOT____Vcellinp__a1__dataa),
+              11,(0x7ffU & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)),
+              11,(0x7ffU & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)));
     vlSelf->mat_mult__DOT__a1_in_80 = (0x7ffU & ((0x800U 
                                                   & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum))
                                                   ? 
@@ -481,7 +517,10 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
     vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum 
         = (0xfffU & ((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
                      + (IData)(vlSelf->mat_mult__DOT__a1_in_80)));
-    VL_WRITEF("%4#\n",11,(0x7ffU & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum)));
+    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n",11,vlSelf->mat_mult__DOT__a1_in_80,
+              11,(IData)(vlSelf->mat_mult__DOT__a0_in_80),
+              11,(0x7ffU & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum)),
+              11,(0x7ffU & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum)));
     vlSelf->mat_mult__DOT__a2_in_80 = (0x7ffU & ((0x800U 
                                                   & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum))
                                                   ? 

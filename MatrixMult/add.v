@@ -68,6 +68,12 @@ module add (
 				.overflow (sub_wire0),
 				.cout (sub_wire1),
 				.result (sub_wire2));
+	always @ (*) begin
+		$display("Adding:");
+		$display(datab);
+		$display(dataa);
+		$display(result);
+	end
 endmodule
 
 // ============================================================
