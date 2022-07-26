@@ -389,28 +389,40 @@ VL_INLINE_OPT void Vmat_mult___024root___combo__TOP__0(Vmat_mult___024root* vlSe
                                                                >> 8U)))) 
                                                 << 9U)) 
                                             | (IData)(mat_mult__DOT__product3_rounded_80));
-    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n",11,mat_mult__DOT____Vcellinp__a0__datab,
+    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n%1#\n%1#\n",
+              11,mat_mult__DOT____Vcellinp__a0__datab,
               11,(IData)(mat_mult__DOT____Vcellinp__a0__dataa),
               11,(0x7ffU & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)),
-              11,(0x7ffU & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)));
+              11,(0x7ffU & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)),
+              1,(1U & ((((~ ((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
+                             >> 0xaU)) & (~ ((IData)(mat_mult__DOT____Vcellinp__a0__datab) 
+                                             >> 0xaU))) 
+                        & ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                           >> 0xbU)) | ((((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
+                                          & (IData)(mat_mult__DOT____Vcellinp__a0__datab)) 
+                                         >> 0xaU) & 
+                                        (~ ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                            >> 0xbU))))),
+              1,(1U & ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                       >> 0xbU)));
     vlSelf->mat_mult__DOT__a0_in_80 = (0x7ffU & ((0x800U 
                                                   & (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum))
                                                   ? 
                                                  ((1U 
-                                                   & (((((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
-                                                         & (IData)(mat_mult__DOT____Vcellinp__a0__datab)) 
-                                                        >> 0xaU) 
-                                                       & (~ 
-                                                          ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                           >> 0xbU))) 
-                                                      | (((~ 
-                                                           ((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
-                                                            >> 0xaU)) 
-                                                          & (~ 
-                                                             ((IData)(mat_mult__DOT____Vcellinp__a0__datab) 
-                                                              >> 0xaU))) 
-                                                         & ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                            >> 0xbU))))
+                                                   & ((((~ 
+                                                         ((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
+                                                          >> 0xaU)) 
+                                                        & (~ 
+                                                           ((IData)(mat_mult__DOT____Vcellinp__a0__datab) 
+                                                            >> 0xaU))) 
+                                                       & ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                          >> 0xbU)) 
+                                                      | ((((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
+                                                           & (IData)(mat_mult__DOT____Vcellinp__a0__datab)) 
+                                                          >> 0xaU) 
+                                                         & (~ 
+                                                            ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                             >> 0xbU)))))
                                                    ? 0x401U
                                                    : 
                                                   ((IData)(
@@ -424,20 +436,20 @@ VL_INLINE_OPT void Vmat_mult___024root___combo__TOP__0(Vmat_mult___024root* vlSe
                                                     : (IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum)))
                                                   : 
                                                  ((1U 
-                                                   & (((((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
-                                                         & (IData)(mat_mult__DOT____Vcellinp__a0__datab)) 
-                                                        >> 0xaU) 
-                                                       & (~ 
-                                                          ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                           >> 0xbU))) 
-                                                      | (((~ 
-                                                           ((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
-                                                            >> 0xaU)) 
-                                                          & (~ 
-                                                             ((IData)(mat_mult__DOT____Vcellinp__a0__datab) 
-                                                              >> 0xaU))) 
-                                                         & ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                            >> 0xbU))))
+                                                   & ((((~ 
+                                                         ((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
+                                                          >> 0xaU)) 
+                                                        & (~ 
+                                                           ((IData)(mat_mult__DOT____Vcellinp__a0__datab) 
+                                                            >> 0xaU))) 
+                                                       & ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                          >> 0xbU)) 
+                                                      | ((((IData)(mat_mult__DOT____Vcellinp__a0__dataa) 
+                                                           & (IData)(mat_mult__DOT____Vcellinp__a0__datab)) 
+                                                          >> 0xaU) 
+                                                         & (~ 
+                                                            ((IData)(mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                             >> 0xbU)))))
                                                    ? 0x3ffU
                                                    : 
                                                   ((IData)(
@@ -453,28 +465,40 @@ VL_INLINE_OPT void Vmat_mult___024root___combo__TOP__0(Vmat_mult___024root* vlSe
     mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum 
         = (0xfffU & ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
                      + (IData)(mat_mult__DOT____Vcellinp__a1__datab)));
-    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n",11,mat_mult__DOT____Vcellinp__a1__datab,
+    VL_WRITEF("Adding:\n%4#\n%4#\n%4#\n%4#\n%1#\n%1#\n",
+              11,mat_mult__DOT____Vcellinp__a1__datab,
               11,(IData)(mat_mult__DOT____Vcellinp__a1__dataa),
               11,(0x7ffU & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)),
-              11,(0x7ffU & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)));
+              11,(0x7ffU & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)),
+              1,(1U & ((((~ ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
+                             >> 0xaU)) & (~ ((IData)(mat_mult__DOT____Vcellinp__a1__datab) 
+                                             >> 0xaU))) 
+                        & ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                           >> 0xbU)) | ((((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
+                                          & (IData)(mat_mult__DOT____Vcellinp__a1__datab)) 
+                                         >> 0xaU) & 
+                                        (~ ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                            >> 0xbU))))),
+              1,(1U & ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                       >> 0xbU)));
     vlSelf->mat_mult__DOT__a1_in_80 = (0x7ffU & ((0x800U 
                                                   & (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum))
                                                   ? 
                                                  ((1U 
-                                                   & (((((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
-                                                         & (IData)(mat_mult__DOT____Vcellinp__a1__datab)) 
-                                                        >> 0xaU) 
-                                                       & (~ 
-                                                          ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                           >> 0xbU))) 
-                                                      | (((~ 
-                                                           ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
-                                                            >> 0xaU)) 
-                                                          & (~ 
-                                                             ((IData)(mat_mult__DOT____Vcellinp__a1__datab) 
-                                                              >> 0xaU))) 
-                                                         & ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                            >> 0xbU))))
+                                                   & ((((~ 
+                                                         ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
+                                                          >> 0xaU)) 
+                                                        & (~ 
+                                                           ((IData)(mat_mult__DOT____Vcellinp__a1__datab) 
+                                                            >> 0xaU))) 
+                                                       & ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                          >> 0xbU)) 
+                                                      | ((((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
+                                                           & (IData)(mat_mult__DOT____Vcellinp__a1__datab)) 
+                                                          >> 0xaU) 
+                                                         & (~ 
+                                                            ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                             >> 0xbU)))))
                                                    ? 0x401U
                                                    : 
                                                   ((IData)(
@@ -488,20 +512,20 @@ VL_INLINE_OPT void Vmat_mult___024root___combo__TOP__0(Vmat_mult___024root* vlSe
                                                     : (IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum)))
                                                   : 
                                                  ((1U 
-                                                   & (((((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
-                                                         & (IData)(mat_mult__DOT____Vcellinp__a1__datab)) 
-                                                        >> 0xaU) 
-                                                       & (~ 
-                                                          ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                           >> 0xbU))) 
-                                                      | (((~ 
-                                                           ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
-                                                            >> 0xaU)) 
-                                                          & (~ 
-                                                             ((IData)(mat_mult__DOT____Vcellinp__a1__datab) 
-                                                              >> 0xaU))) 
-                                                         & ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                            >> 0xbU))))
+                                                   & ((((~ 
+                                                         ((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
+                                                          >> 0xaU)) 
+                                                        & (~ 
+                                                           ((IData)(mat_mult__DOT____Vcellinp__a1__datab) 
+                                                            >> 0xaU))) 
+                                                       & ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                          >> 0xbU)) 
+                                                      | ((((IData)(mat_mult__DOT____Vcellinp__a1__dataa) 
+                                                           & (IData)(mat_mult__DOT____Vcellinp__a1__datab)) 
+                                                          >> 0xaU) 
+                                                         & (~ 
+                                                            ((IData)(mat_mult__DOT__a1__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                             >> 0xbU)))))
                                                    ? 0x3ffU
                                                    : 
                                                   ((IData)(
@@ -536,25 +560,36 @@ VL_INLINE_OPT void Vmat_mult___024root___combo__TOP__1(Vmat_mult___024root* vlSe
     Vmat_mult__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vmat_mult___024root___combo__TOP__1\n"); );
     // Body
-    VL_WRITEF("%4#\n",11,(0x7ffU & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum)));
+    VL_WRITEF("%4#\n%1#\n%1#\n",11,(0x7ffU & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum)),
+              1,(1U & ((((~ ((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
+                             >> 0xaU)) & (~ ((IData)(vlSelf->mat_mult__DOT__a1_in_80) 
+                                             >> 0xaU))) 
+                        & ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                           >> 0xbU)) | ((((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
+                                          & (IData)(vlSelf->mat_mult__DOT__a1_in_80)) 
+                                         >> 0xaU) & 
+                                        (~ ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                            >> 0xbU))))),
+              1,(1U & ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                       >> 0xbU)));
     vlSelf->mat_mult__DOT__a2_in_80 = (0x7ffU & ((0x800U 
                                                   & (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum))
                                                   ? 
                                                  ((1U 
-                                                   & (((((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
-                                                         & (IData)(vlSelf->mat_mult__DOT__a1_in_80)) 
-                                                        >> 0xaU) 
-                                                       & (~ 
-                                                          ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                           >> 0xbU))) 
-                                                      | (((~ 
-                                                           ((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
-                                                            >> 0xaU)) 
-                                                          & (~ 
-                                                             ((IData)(vlSelf->mat_mult__DOT__a1_in_80) 
-                                                              >> 0xaU))) 
-                                                         & ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                            >> 0xbU))))
+                                                   & ((((~ 
+                                                         ((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
+                                                          >> 0xaU)) 
+                                                        & (~ 
+                                                           ((IData)(vlSelf->mat_mult__DOT__a1_in_80) 
+                                                            >> 0xaU))) 
+                                                       & ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                          >> 0xbU)) 
+                                                      | ((((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
+                                                           & (IData)(vlSelf->mat_mult__DOT__a1_in_80)) 
+                                                          >> 0xaU) 
+                                                         & (~ 
+                                                            ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                             >> 0xbU)))))
                                                    ? 0x401U
                                                    : 
                                                   ((IData)(
@@ -568,20 +603,20 @@ VL_INLINE_OPT void Vmat_mult___024root___combo__TOP__1(Vmat_mult___024root* vlSe
                                                     : (IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum)))
                                                   : 
                                                  ((1U 
-                                                   & (((((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
-                                                         & (IData)(vlSelf->mat_mult__DOT__a1_in_80)) 
-                                                        >> 0xaU) 
-                                                       & (~ 
-                                                          ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                           >> 0xbU))) 
-                                                      | (((~ 
-                                                           ((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
-                                                            >> 0xaU)) 
-                                                          & (~ 
-                                                             ((IData)(vlSelf->mat_mult__DOT__a1_in_80) 
-                                                              >> 0xaU))) 
-                                                         & ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
-                                                            >> 0xbU))))
+                                                   & ((((~ 
+                                                         ((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
+                                                          >> 0xaU)) 
+                                                        & (~ 
+                                                           ((IData)(vlSelf->mat_mult__DOT__a1_in_80) 
+                                                            >> 0xaU))) 
+                                                       & ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                          >> 0xbU)) 
+                                                      | ((((IData)(vlSelf->mat_mult__DOT__a0_in_80) 
+                                                           & (IData)(vlSelf->mat_mult__DOT__a1_in_80)) 
+                                                          >> 0xaU) 
+                                                         & (~ 
+                                                            ((IData)(vlSelf->mat_mult__DOT__a2__DOT__LPM_ADD_SUB_component__DOT__sum) 
+                                                             >> 0xbU)))))
                                                    ? 0x3ffU
                                                    : 
                                                   ((IData)(

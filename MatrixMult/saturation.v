@@ -27,6 +27,8 @@ wire    carry_80, oflow_80;
         always @ ( carry_80 or oflow_80 or sum_80 )
         begin
                 $display(sum_80);
+                $display(oflow_80);
+                $display(carry_80);
                 case ( {carry_80,oflow_80} )
                 2'b00 : begin
                                 if ((sum_80[WIDTH_SUM-1]==1'b1) && (sum_80[WIDTH_SUM-2:0]==0))

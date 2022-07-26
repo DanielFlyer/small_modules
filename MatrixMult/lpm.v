@@ -14,7 +14,7 @@ wire [LPM_WIDTH:0] sum;
 assign sum = dataa + datab;
 assign result = sum[LPM_WIDTH-1:0];
 assign cout = sum[LPM_WIDTH];
-assign overflow = (dataa[LPM_WIDTH-1] & datab[LPM_WIDTH-1] & ~sum[LPM_WIDTH]) | (~dataa[LPM_WIDTH-1] & ~datab[LPM_WIDTH-1] & sum[LPM_WIDTH]);
+assign overflow = (~dataa[LPM_WIDTH-1] & ~datab[LPM_WIDTH-1] & sum[LPM_WIDTH]) | (dataa[LPM_WIDTH-1] & datab[LPM_WIDTH-1] & ~sum[LPM_WIDTH]);
 endmodule
 
 module lpm_mult (dataa, datab, result);
