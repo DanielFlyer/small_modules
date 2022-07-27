@@ -79,199 +79,316 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                                  : (IData)(vlSelf->B02_80)));
     VL_WRITEF("Multiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
               8,mat_mult__DOT__B00_80_corrected,9,(IData)(mat_mult__DOT__A00_80_corrected),
-              17,(0x1ffffU & ((IData)(mat_mult__DOT__A00_80_corrected) 
-                              * (IData)(mat_mult__DOT__B00_80_corrected))),
-              17,(0x1ffffU & ((IData)(mat_mult__DOT__A00_80_corrected) 
-                              * (IData)(mat_mult__DOT__B00_80_corrected))));
+              17,(((IData)((((IData)(mat_mult__DOT__A00_80_corrected) 
+                             >> 8U) ^ ((IData)(mat_mult__DOT__B00_80_corrected) 
+                                       >> 7U))) << 0x10U) 
+                  | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                * (0x7fU & (IData)(mat_mult__DOT__B00_80_corrected))))),
+              17,(((IData)((((IData)(mat_mult__DOT__A00_80_corrected) 
+                             >> 8U) ^ ((IData)(mat_mult__DOT__B00_80_corrected) 
+                                       >> 7U))) << 0x10U) 
+                  | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                * (0x7fU & (IData)(mat_mult__DOT__B00_80_corrected))))));
     mat_mult__DOT__product0_rounded_80 = (0x1ffU & 
-                                          ((0x10000U 
-                                            & ((IData)(mat_mult__DOT__A00_80_corrected) 
-                                               * (IData)(mat_mult__DOT__B00_80_corrected)))
+                                          ((IData)(
+                                                   (((IData)(mat_mult__DOT__A00_80_corrected) 
+                                                     >> 8U) 
+                                                    ^ 
+                                                    ((IData)(mat_mult__DOT__B00_80_corrected) 
+                                                     >> 7U)))
                                             ? ((0U 
                                                 == 
                                                 (0xffU 
-                                                 & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                     >> 7U)))
                                                 ? ((IData)(1U) 
                                                    + 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                        >> 7U)))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B00_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B00_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                        >> 7U))))
                                             : ((0x7fU 
                                                 == 
                                                 (0x7fU 
-                                                 & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                     >> 8U)))
-                                                ? (0x3ffU 
-                                                   & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                ? (0x1ffU 
+                                                   & (((0xffU 
+                                                        & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                       >> 7U))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B00_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B00_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A00_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B00_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A00_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B00_80_corrected))) 
                                                        >> 7U))))));
     VL_WRITEF("%3#\nMultiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
               9,mat_mult__DOT__product0_rounded_80,
               8,(IData)(mat_mult__DOT__B01_80_corrected),
               9,mat_mult__DOT__A01_80_corrected,17,
-              (0x1ffffU & ((IData)(mat_mult__DOT__A01_80_corrected) 
-                           * (IData)(mat_mult__DOT__B01_80_corrected))),
-              17,(0x1ffffU & ((IData)(mat_mult__DOT__A01_80_corrected) 
-                              * (IData)(mat_mult__DOT__B01_80_corrected))));
+              (((IData)((((IData)(mat_mult__DOT__A01_80_corrected) 
+                          >> 8U) ^ ((IData)(mat_mult__DOT__B01_80_corrected) 
+                                    >> 7U))) << 0x10U) 
+               | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                             * (0x7fU & (IData)(mat_mult__DOT__B01_80_corrected))))),
+              17,(((IData)((((IData)(mat_mult__DOT__A01_80_corrected) 
+                             >> 8U) ^ ((IData)(mat_mult__DOT__B01_80_corrected) 
+                                       >> 7U))) << 0x10U) 
+                  | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                * (0x7fU & (IData)(mat_mult__DOT__B01_80_corrected))))));
     mat_mult__DOT__product1_rounded_80 = (0x1ffU & 
-                                          ((0x10000U 
-                                            & ((IData)(mat_mult__DOT__A01_80_corrected) 
-                                               * (IData)(mat_mult__DOT__B01_80_corrected)))
+                                          ((IData)(
+                                                   (((IData)(mat_mult__DOT__A01_80_corrected) 
+                                                     >> 8U) 
+                                                    ^ 
+                                                    ((IData)(mat_mult__DOT__B01_80_corrected) 
+                                                     >> 7U)))
                                             ? ((0U 
                                                 == 
                                                 (0xffU 
-                                                 & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                     >> 7U)))
                                                 ? ((IData)(1U) 
                                                    + 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                        >> 7U)))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B01_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B01_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                        >> 7U))))
                                             : ((0x7fU 
                                                 == 
                                                 (0x7fU 
-                                                 & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                     >> 8U)))
-                                                ? (0x3ffU 
-                                                   & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                ? (0x1ffU 
+                                                   & (((0xffU 
+                                                        & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                       >> 7U))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B01_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B01_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A01_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B01_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A01_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B01_80_corrected))) 
                                                        >> 7U))))));
     VL_WRITEF("%3#\nMultiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
               9,mat_mult__DOT__product1_rounded_80,
               8,(IData)(mat_mult__DOT__B02_80_corrected),
               9,mat_mult__DOT__A02_80_corrected,17,
-              (0x1ffffU & ((IData)(mat_mult__DOT__A02_80_corrected) 
-                           * (IData)(mat_mult__DOT__B02_80_corrected))),
-              17,(0x1ffffU & ((IData)(mat_mult__DOT__A02_80_corrected) 
-                              * (IData)(mat_mult__DOT__B02_80_corrected))));
+              (((IData)((((IData)(mat_mult__DOT__A02_80_corrected) 
+                          >> 8U) ^ ((IData)(mat_mult__DOT__B02_80_corrected) 
+                                    >> 7U))) << 0x10U) 
+               | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                             * (0x7fU & (IData)(mat_mult__DOT__B02_80_corrected))))),
+              17,(((IData)((((IData)(mat_mult__DOT__A02_80_corrected) 
+                             >> 8U) ^ ((IData)(mat_mult__DOT__B02_80_corrected) 
+                                       >> 7U))) << 0x10U) 
+                  | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                * (0x7fU & (IData)(mat_mult__DOT__B02_80_corrected))))));
     mat_mult__DOT__product2_rounded_80 = (0x1ffU & 
-                                          ((0x10000U 
-                                            & ((IData)(mat_mult__DOT__A02_80_corrected) 
-                                               * (IData)(mat_mult__DOT__B02_80_corrected)))
+                                          ((IData)(
+                                                   (((IData)(mat_mult__DOT__A02_80_corrected) 
+                                                     >> 8U) 
+                                                    ^ 
+                                                    ((IData)(mat_mult__DOT__B02_80_corrected) 
+                                                     >> 7U)))
                                             ? ((0U 
                                                 == 
                                                 (0xffU 
-                                                 & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                     >> 7U)))
                                                 ? ((IData)(1U) 
                                                    + 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                        >> 7U)))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B02_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B02_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                        >> 7U))))
                                             : ((0x7fU 
                                                 == 
                                                 (0x7fU 
-                                                 & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                     >> 8U)))
-                                                ? (0x3ffU 
-                                                   & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                ? (0x1ffU 
+                                                   & (((0xffU 
+                                                        & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                       >> 7U))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B02_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B02_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A02_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B02_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A02_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B02_80_corrected))) 
                                                        >> 7U))))));
     VL_WRITEF("%3#\n",9,mat_mult__DOT__product2_rounded_80);
     mat_mult__DOT__A03_80_corrected = (0x1ffU & ((IData)(
@@ -316,67 +433,106 @@ VL_ATTR_COLD void Vmat_mult___024root___settle__TOP__0(Vmat_mult___024root* vlSe
                                             | (IData)(mat_mult__DOT__product2_rounded_80));
     VL_WRITEF("Multiply:\n%3#\n%3#\n%6#\nRounding:\n%6#\n",
               8,mat_mult__DOT__B03_80_corrected,9,(IData)(mat_mult__DOT__A03_80_corrected),
-              17,(0x1ffffU & ((IData)(mat_mult__DOT__A03_80_corrected) 
-                              * (IData)(mat_mult__DOT__B03_80_corrected))),
-              17,(0x1ffffU & ((IData)(mat_mult__DOT__A03_80_corrected) 
-                              * (IData)(mat_mult__DOT__B03_80_corrected))));
+              17,(((IData)((((IData)(mat_mult__DOT__A03_80_corrected) 
+                             >> 8U) ^ ((IData)(mat_mult__DOT__B03_80_corrected) 
+                                       >> 7U))) << 0x10U) 
+                  | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                * (0x7fU & (IData)(mat_mult__DOT__B03_80_corrected))))),
+              17,(((IData)((((IData)(mat_mult__DOT__A03_80_corrected) 
+                             >> 8U) ^ ((IData)(mat_mult__DOT__B03_80_corrected) 
+                                       >> 7U))) << 0x10U) 
+                  | (0xffffU & ((0xffU & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                * (0x7fU & (IData)(mat_mult__DOT__B03_80_corrected))))));
     mat_mult__DOT__product3_rounded_80 = (0x1ffU & 
-                                          ((0x10000U 
-                                            & ((IData)(mat_mult__DOT__A03_80_corrected) 
-                                               * (IData)(mat_mult__DOT__B03_80_corrected)))
+                                          ((IData)(
+                                                   (((IData)(mat_mult__DOT__A03_80_corrected) 
+                                                     >> 8U) 
+                                                    ^ 
+                                                    ((IData)(mat_mult__DOT__B03_80_corrected) 
+                                                     >> 7U)))
                                             ? ((0U 
                                                 == 
                                                 (0xffU 
-                                                 & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                     >> 7U)))
                                                 ? ((IData)(1U) 
                                                    + 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                        >> 7U)))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B03_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B03_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                        >> 7U))))
                                             : ((0x7fU 
                                                 == 
                                                 (0x7fU 
-                                                 & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                     * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                 & (((0xffU 
+                                                      & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                     * 
+                                                     (0x7fU 
+                                                      & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                     >> 8U)))
-                                                ? (0x3ffU 
-                                                   & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                ? (0x1ffU 
+                                                   & (((0xffU 
+                                                        & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                       >> 7U))
                                                 : (
                                                    (0x40U 
-                                                    & ((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                       * (IData)(mat_mult__DOT__B03_80_corrected)))
+                                                    & ((0xffU 
+                                                        & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                       * 
+                                                       (0x7fU 
+                                                        & (IData)(mat_mult__DOT__B03_80_corrected))))
                                                     ? 
                                                    ((IData)(1U) 
                                                     + 
-                                                    (0x3ffU 
-                                                     & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                         * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                    (0x1ffU 
+                                                     & (((0xffU 
+                                                          & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                         * 
+                                                         (0x7fU 
+                                                          & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                         >> 7U)))
                                                     : 
-                                                   (0x3ffU 
-                                                    & (((IData)(mat_mult__DOT__A03_80_corrected) 
-                                                        * (IData)(mat_mult__DOT__B03_80_corrected)) 
+                                                   (0x1ffU 
+                                                    & (((0xffU 
+                                                         & (IData)(mat_mult__DOT__A03_80_corrected)) 
+                                                        * 
+                                                        (0x7fU 
+                                                         & (IData)(mat_mult__DOT__B03_80_corrected))) 
                                                        >> 7U))))));
     VL_WRITEF("%3#\n",9,mat_mult__DOT__product3_rounded_80);
     mat_mult__DOT__a0__DOT__LPM_ADD_SUB_component__DOT__sum 

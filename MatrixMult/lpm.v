@@ -28,6 +28,9 @@ input[LPM_WIDTHB-1:0] datab;
 
 output[LPM_WIDTHP-1:0] result;
 
-assign result = dataa*datab;
+wire[LPM_WIDTHP-2:0] prod;
+
+assign prod = dataa[LPM_WIDTHA-2:0]*datab[LPM_WIDTHB-2:0];
+assign result = {dataa[LPM_WIDTHA-1]^datab[LPM_WIDTHB-1],prod};
 
 endmodule
