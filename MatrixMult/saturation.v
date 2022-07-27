@@ -26,9 +26,9 @@ wire    carry_80, oflow_80;
         //   saturate sum to the lowest negative number = 1001 (-7)
         always @ ( carry_80 or oflow_80 or sum_80 )
         begin
-                $display(sum_80);
-                $display(oflow_80);
-                $display(carry_80);
+                //$display(sum_80);
+                //$display(oflow_80);
+                //$display(carry_80);
                 case ( {carry_80,oflow_80} )
                 2'b00 : begin
                                 if ((sum_80[WIDTH_SUM-1]==1'b1) && (sum_80[WIDTH_SUM-2:0]==0))
@@ -48,6 +48,6 @@ wire    carry_80, oflow_80;
 
                 2'b11 : sum_saturated_80 = { 1'b1, { (WIDTH_SUM-2) {1'b0} }, 1'b1 };
                 endcase
-                $display(sum_saturated_80);
+                //$display(sum_saturated_80);
         end
 endmodule
