@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dflyer/small_modules'
+make: Leaving directory '/home/dflyer/small_modules'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

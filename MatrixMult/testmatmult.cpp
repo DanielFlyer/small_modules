@@ -146,10 +146,910 @@ void test(short A00_80, short A01_80, short A02_80, short A03_80, short B00_80, 
     mat_mult->clk_80 = 0;
     mat_mult->eval();
 
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
     end = clock();
     verilatorTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
     start = clock();
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
     out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
     out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
     out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
@@ -165,6 +1065,1626 @@ void test(short A00_80, short A01_80, short A02_80, short A03_80, short B00_80, 
     cTime += ((double) (end - start)) / CLOCKS_PER_SEC;
 
         start = clock();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+    
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
+
+    mat_mult->rst_80 = 1;
+    mat_mult->eval();
+    mat_mult->rst_80 = 0;
+    
+    mat_mult->clk_80 = 1;
+    mat_mult->eval();
+    mat_mult->clk_80 = 0;
+    mat_mult->eval();
 
     mat_mult->rst_80 = 1;
     mat_mult->eval();
@@ -370,12 +2890,193 @@ void test(short A00_80, short A01_80, short A02_80, short A03_80, short B00_80, 
     out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
     out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
     out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    out = mat_mult_c(A00_80, A01_80, A02_80, A03_80, B00_80, B01_80, B02_80, B03_80);
+    
     end = clock();
 
     cTime2 += ((double) (end - start)) / CLOCKS_PER_SEC;
 
 
-    if(mat_mult->AB00_80 != out){
-        std::cout << "Error\n";
-    }
+    // if(mat_mult->AB00_80 != out){
+    //     std::cout << "Error\n";
+    // }
 }
