@@ -8,3 +8,5 @@ Mod3 -> 15.5x speed up
 aes_128 -> 38x speed up
 aes_192 -> 30x speed up
 aes_256 -> 28x speed up
+Matrix Multiplication (Division with round function) -> 1.2x
+Matrix Multiplication (Custom rounding function) -> 3.5x

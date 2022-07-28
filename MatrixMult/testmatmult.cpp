@@ -3076,7 +3076,9 @@ void test(short A00_80, short A01_80, short A02_80, short A03_80, short B00_80, 
     cTime2 += ((double) (end - start)) / CLOCKS_PER_SEC;
 
 
-    // if(mat_mult->AB00_80 != out){
-    //     std::cout << "Error\n";
-    // }
+    if(mat_mult->AB00_80 != out){
+        std::cout << "Error\n";
+        std::cout << mat_mult->AB00_80 << std::endl;
+        std::cout << out << std::endl;
+    }
 }
